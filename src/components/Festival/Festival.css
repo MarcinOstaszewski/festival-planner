@@ -1,0 +1,25 @@
+.festival-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 0;
+  font-size: 1em;
+}
+
+.festival-days {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  font-size: 0.75em;
+  border-left: 1px solid #ccc;
+
+}
+
+.festival-day {
+  margin: 0;
+  padding: 0 6px;
+  border-right: 1px solid #ccc;
+}
