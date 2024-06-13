@@ -7,7 +7,6 @@ export const festivalService = {
     async function fetchFestival() {
       try {
         const module = await import(`../data/festivals/${festivalId}`) || null;
-        console.log('module, module.default', module, module.default);
         const fetchedFestival = module[festivalId] || null;
         setFestival(fetchedFestival);
       } catch (error) {

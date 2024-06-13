@@ -1,0 +1,69 @@
+.stages-section {
+  position: relative;
+  font-size: 0.6em;
+  margin-top: 12px;
+  padding: 6px;
+  width: 100%;
+  background-color: var(--background-color);
+  overflow-x: none;
+}
+
+.stages-names {
+  width: calc(100% - 24px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 6px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.stage-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  color: var(--color-dark);
+}
+
+.stage-line {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color-dark);
+}
+
+.stage-underline {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.timelines {
+  position: relative;
+  overflow-x: scroll;
+}
+
+.concert {
+  box-sizing: border-box;
+  position: absolute;
+  background-color: var(--background-color-concert);
+  color: var(--color-light);
+  font-weight: 500;
+  padding: 2px;
+  border-radius: 3px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.artist-name {
+  font-size: .8em;
+  color: var(--color-dark);
+  line-height: .8em;
+  text-align: center;
+}
