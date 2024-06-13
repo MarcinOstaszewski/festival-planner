@@ -1,3 +1,21 @@
+:root {
+  --color-light: #fff;
+  --color: #eee;
+  --color-dark: #ddd;
+  --color-very-dark: #aaa;
+  --color-line: #666;
+  --color-link: #06a;
+  --background-color-light: #333;
+  --background-color: #292929;
+  --background-color-dark: #222;
+  --background-color-concert: #466018;
+}
+
+html {
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
 .App {
   margin: 12px;
   display: flex;
@@ -27,7 +45,7 @@
 
 .header-1 {
   font-size: 0.85em;
-  margin: 0 0 6px;
+  margin: 0;
   padding: 0;
   font-weight: bold;
 }
