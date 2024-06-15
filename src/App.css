@@ -5,6 +5,9 @@
   --color-very-dark: #aaa;
   --color-line: #666;
   --color-link: #06a;
+  --color-primary: #7f21ab;
+  --color-secondary: #62F9F4;
+  --color-tertiary: #F5B700;
   --background-color-light: #333;
   --background-color: #292929;
   --background-color-dark: #222;
@@ -14,6 +17,7 @@
 html {
   background-color: var(--background-color);
   color: var(--color);
+  overflow: hidden;
 }
 
 .App {

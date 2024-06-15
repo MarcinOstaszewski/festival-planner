@@ -10,18 +10,30 @@ export interface IConcert {
   timeFinish: string;
 }
 
+export interface IConcertModified {
+  artist: IArtist;
+  timeStart: number;
+  timeFinish: number;
+}
+
 export interface IStage {
   name: string;
   concerts: IConcert[];
 }
 
-export interface IListedFestival {
-  id: string;
+export interface IStageModified {
   name: string;
-  datestart: string;
-  datefinish: string;
-  location: string;
-  description: string;
+  concerts: IConcertModified[];
+}
+
+export interface IFestivalDay {
+  date: string;
+  stages: IStage[]
+}
+
+export interface IFestivalDayModified {
+  date: string;
+  stages: IStageModified[];
 }
 
 export interface IFestival {
@@ -33,7 +45,20 @@ export interface IFestival {
   festivalDays: IFestivalDay[];
 }
 
-export interface IFestivalDay {
-  date: string;
-  stages: IStage[]
+export interface IFestivalModified {
+  id: string;
+  name: string;
+  year: number;
+  location?: string;
+  description?: string;
+  festivalDays: IFestivalDayModified[];
+}
+
+export interface IListedFestival {
+  id: string;
+  name: string;
+  datestart: string;
+  datefinish: string;
+  location: string;
+  description: string;
 }

@@ -1,8 +1,8 @@
 import React from "react";
-import { IFestivalDay } from "../../interfaces/interfaces";
+import { IFestivalDayModified } from "../../interfaces/interfaces";
 
 interface IFestivalDaysProps {
-  festivalDays: IFestivalDay[];
+  festivalDays: IFestivalDayModified[];
   handleDayClick: (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => void;
 }
 
@@ -23,4 +23,4 @@ const FestivalDays = ({
   return <>{days}</>;
 };
 
-export  default FestivalDays;
+export default FestivalDays;
