@@ -5,15 +5,15 @@
   padding: 6px;
   width: 100%;
   background-color: var(--background-color);
-  /* overflow: auto; */
+  overflow: auto;
 }
 
 .stages-names {
-  width: calc(100% - 24px);
+  width: 240px;
   height: 100%;
-  position: absolute;
-  top: 12px;
-  left: 6px;
+  position: fixed;
+  top: 54px;
+  left: 20px;
   font-weight: bold;
   font-size: 0.8em;
 }
@@ -37,13 +37,21 @@
 .stage-underline {
   position: absolute;
   left: 0;
-  width: 100%;
-  border-bottom: 1px solid var(--color-line);
+  width: 90px;
+  border-bottom: 1px dotted var(--color-line);
 }
 
 .stages-timelines {
+  overflow-x: hidden;
+}
+
+.scroll-container {
   position: relative;
-  overflow-x: scroll;
+  display: block;
+  overflow: auto;
+  height: max-content;
+  width: max-content;
+  width: 100%;
 }
 
 .concert {

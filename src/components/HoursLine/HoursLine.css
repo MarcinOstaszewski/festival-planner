@@ -1,9 +1,9 @@
 .hours-line {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: max-content;
+  height: max-content;
   font-size: 0.75em;
   color: var(--color-very-dark);
 }

@@ -4,10 +4,11 @@ import "./HoursLine.css";
 interface HoursLineProps {
   earliestTime: number;
   latestTime: number;
+  containerHeight: number;
 }
 
 const HoursLine: React.FC<HoursLineProps> = ({
-  earliestTime, latestTime
+  earliestTime, latestTime, containerHeight
 }) => {
   const firstHour = Math.floor(earliestTime / 60);
   const lastHour = Math.floor(latestTime / 60);
@@ -18,10 +19,11 @@ const HoursLine: React.FC<HoursLineProps> = ({
     return <span className="hour" key={index}>&nbsp;{hour}:00</span>
   });
 
-  return (
-    <div className="hours-line">
+  return (<>
+    <div className="hours-line" style={{height: containerHeight}}>
       {hoursLine}
     </div>
+    </>
   );
 };
 

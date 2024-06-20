@@ -21,7 +21,7 @@ const StagesNames: React.FC<StagesNamesProps> = ({stages}) => {
   </>);
 
   return (
-    <div className="stages-names" key={111}>
+    <div className="stages-names">
       {stagesNames}
     </div>
   );

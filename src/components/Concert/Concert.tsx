@@ -21,7 +21,7 @@ const Concert = ({
       className="concert"
       style={{
         top: stageIndex * timelineHeight + topMargin * 6,
-        left: timeStart - earliestTime,
+        left: (timeStart - earliestTime),
         width: concertDuration,
       }}
     >
